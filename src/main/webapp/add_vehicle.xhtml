@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Add Vehicle</title>
+    </h:head>
+    <h:body>
+        <h1>Add New Vehicle</h1>
+        <table>
+            <tr>
+		<td>Select Vehicle Type:</td>
+                <td><select name="vehicleType">
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+		</select></td>
+            </tr>
+            <tr>
+		<td>Vehicle VIN Number:</td>
+                <td><input type="text" name="vinNumber" maxlength="12" value=""></input></td>
+            </tr>
+            <tr>
+		<td>Vehicle Make:</td>
+                <td><input type="text" name="make" maxlength="10" value=""></input></td>
+            </tr>
+            <tr>
+		<td>Vehicle Model:</td>
+                <td><input type="text" name="model" maxlength="10" value=""></input></td>
+            </tr>
+            <td>Select Fuel Type:</td>
+                <td><select name="fuelType">
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="electric">Electric</option>
+		</select></td>
+            <tr>
+		<td>Number of Cylinders:</td>
+                <td><input type="number" name="cylinders" maxlength="2" maxvalue="12" value=""></input></td>
+            </tr>
+            <tr>
+		<td>Transmission Type Type:</td>
+                <td><select name="transmission">
+                    <option value="uto">AUTO</option>
+                    <option value="manual">MAN</option>
+		</select></td>
+            </tr>
+            <tr>
+		<td>Vehicle Colour:</td>
+                <td><input type="text" name="colour" maxlength="10" value=""></input></td>
+            </tr>
+            <tr>
+		<td>Number of Doors:</td>
+                <td><input type="number" name="doors" maxlength="1" maxvalue="9" value=""></input></td>
+            </tr>
+            <tr>
+		<td>Number of Seats</td>
+                <td><input type="number" name="seats" maxlength="2" maxvalue="12" value=""></input></td>
+            </tr>
+        </table>
+        <br></br>
+        <br></br>
+        <table>
+            <tr>
+                <td>
+                    <form action="">
+                        <input type="submit" value="Submit" />
+                    </form>
+                </td>
+                <td>
+                    <form action="index.xhtml">
+                        <input type="submit" value="Cancel" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>
+
