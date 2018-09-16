@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Add Sale</title>
+    </h:head>
+    <h:body>
+        <h1>Add A New Sale</h1>
+        <table>
+            <tr>
+		<td>Date of Sale:</td>
+                <td><input type="date" name="saleDate" value="2018-09-01" min="2018-01-01" max="2018-12-31" ></input></td>
+            </tr>
+            <tr>
+		<td>Sale Price of Vehicle:</td>
+                <td><input type="number" name="salePrice" maxlength="9" maxvalue="100000" value="0"></input></td>
+            </tr>
+        </table>
+        <br></br>
+        <br></br>
+        <table>
+            <tr>
+                <td>
+                    <form action="">
+                        <input type="submit" value="Submit" />
+                    </form>
+                </td>
+                <td>
+                    <form action="index.xhtml">
+                        <input type="submit" value="Cancel" />
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </h:body>
+</html>
+
